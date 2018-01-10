@@ -18,7 +18,6 @@ public class PickupBehaviour : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         transform.Rotate((transform.up * Pickup_SpinSpeed) * Time.deltaTime);
-
     }
 
     void OnTriggerEnter(Collider other)

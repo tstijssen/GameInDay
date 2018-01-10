@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class ObstacleBehaviour : MonoBehaviour
 {
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-                    // GAME OVER
-           other.gameObject.SetActive(false);
-           GameObject gameOverMenu = GameObject.FindGameObjectWithTag("GameOvermenu");
-           gameOverMenu.gameObject.SetActive(true);
+            // GAME OVER
+
+            other.gameObject.SetActive(false);
+            GameObject ManagerInfo;
+            ManagerInfo = GameObject.Find("GameManager");
+            ManagerInfo.GetComponent<Interface>().PlayerDeath();
         }
     }
 }

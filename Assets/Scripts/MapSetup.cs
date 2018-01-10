@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class MapSetup : MonoBehaviour {
 
-    public Transform player;
     public Transform floor_valid;
     public Transform floor_obstacle;
 
@@ -13,7 +12,7 @@ public class MapSetup : MonoBehaviour {
     public const string stile_wall = "1";
     public const string stile_start = "S";
 
-    public TextAsset map_file;
+    public TextAsset[] map_files = new TextAsset[5];
 
     // Use this for initialization
     void Start () {
@@ -52,7 +51,7 @@ public class MapSetup : MonoBehaviour {
 
     string[][] readFile()
     {
-        string text = map_file.ToString();
+        string text = map_files[PlayerPrefs.GetInt("Map")].text;
         string[] lines = Regex.Split(text, "\r\n");
         int rows = lines.Length;
 

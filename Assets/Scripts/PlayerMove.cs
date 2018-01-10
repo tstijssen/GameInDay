@@ -6,7 +6,6 @@ public class PlayerMove : MonoBehaviour {
 
     public List<Transform> BodyParts = new List<Transform>();
 
-    public KeyCode pauseKey = KeyCode.Space;
     public KeyCode leftKey = KeyCode.A;
     public KeyCode rightKey = KeyCode.D;
     public float player_speed;

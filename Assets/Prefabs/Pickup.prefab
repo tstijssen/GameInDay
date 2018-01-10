@@ -52,12 +52,11 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: dafbb4c51fd7da64692a1dcc50427139, type: 2}
+  - {fileID: 2100000, guid: 6c8cc2afdf3d02049b71a1f5abc7ab90, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68,7 +67,6 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -107,5 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c989e498462acf644a70486980a2c986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickup_sound: {fileID: 8300000, guid: 296f184f8c9cd634282f46b226cf3d22, type: 3}
   Pickup_SpinSpeed: 50
   Pickup_Score: 10
