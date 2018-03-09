@@ -27,11 +27,11 @@ public class PlayerMove : MonoBehaviour {
         }
         else
         {
-            BodyParts[0].Translate((BodyParts[0].forward * player_speed) * Time.smoothDeltaTime);
+            BodyParts[0].Translate((-BodyParts[0].forward * player_speed) * Time.smoothDeltaTime);
 
             if (Input.GetAxis("Horizontal") != 0)
             {
-                BodyParts[0].Rotate(((Vector3.up * rotation_speed) * Time.deltaTime) * Input.GetAxis("Horizontal"));
+                BodyParts[0].Rotate(((-Vector3.forward * rotation_speed) * Time.deltaTime) * Input.GetAxis("Horizontal"));
             }
 
             for (int i = 1; i < BodyParts.Count; ++i)

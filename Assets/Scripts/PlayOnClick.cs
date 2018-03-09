@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayOnClick : MonoBehaviour {
     // sound variables
     public AudioClip btnpress_sound;
+    public AudioClip otherSound;
     private float throwSpeed = 2000f;
     private AudioSource source;
     private float volLowRange = .5f;
